@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Custom Tab Layout</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+        .tab-box {
+            margin-bottom: 30px;
+        }
+
+        .tab-btn {
+            padding: 20px;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .tab-btn i {
+            display: block;
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .tab-content-box {
+            padding: 15px;
+            color: white;
+            border-radius: 4px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        #tab1:target .tab1-content,
+        #tab2:target .tab2-content,
+        #tab3:target .tab3-content {
+            display: block;
+        }
+
+        .blue-bg {
+            background-color: #337ab7;
+        }
+
+        .green-bg {
+            background-color: #33b7a3;
+        }
+
+        .red-bg {
+            background-color: #b73346;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center">
+        <div class="row">
+            <!-- Tab 1 -->
+            <div class="col-lg-4 tab-box" id="tab1">
+                <a href="#tab1" class="tab-btn blue-bg">
+                    <i class="fa fa-book"></i>Tap 1
+                </a>
+                <div class="tab-content-box blue-bg tab1-content">
+                    <p>This is the content for Tab 1.</p>
+                </div>
+            </div>
+
+            <!-- Tab 2 -->
+            <div class="col-lg-4 tab-box" id="tab2">
+                <a href="#tab2" class="tab-btn green-bg">
+                    <i class="fa fa-bus"></i>Tap 2
+                </a>
+                <div class="tab-content-box green-bg tab2-content">
+                    <p>This is the content for Tab 2.</p>
+                </div>
+            </div>
+
+            <!-- Tab 3 -->
+            <div class="col-lg-4 tab-box" id="tab3">
+                <a href="#tab3" class="tab-btn red-bg">
+                    <i class="fa fa-futbol-o"></i>Tap 3
+                </a>
+                <div class="tab-content-box red-bg tab3-content">
+                    <p>This is the content for Tab 3.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
